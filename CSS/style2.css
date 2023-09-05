@@ -13,7 +13,6 @@ body
     margin: 0;
     width: 50%;
     float: left;
-    /* background-color: rebeccapurple; */
     align-items: center;
     text-align: center;
 }
@@ -74,32 +73,40 @@ body
 
 .navbar-horz
 {
-    background-color: lightgray;
+    align-items: center;
+    padding: 2px;
+    display:flex;
+
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     width: 100%;
     text-decoration: none;
     color: blue;
+    justify-content: center;
 }
 
-.navbar-horz > span:not(#line)
+.navbar-horz > div:not(#line)
 {
-    display: inline-flex;
-    padding: 0;
+    background-color: lightgray;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
 #line
 {
+    display: flex;
     border: 1px solid blue;
     height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
-.navbar-horz > span:hover
+.navbar-horz div:hover
 {
-    background-color: gray;
+    background-color: gray !important;
     color: white;
     text-decoration: none;
 }
