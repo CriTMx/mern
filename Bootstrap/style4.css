@@ -1,0 +1,32 @@
+.card
+{
+    border-radius: 3px;
+    display: flex;
+    position: inherit;
+    display: block;
+    top: 5%;
+}
+
+.card-img-top .card-img-overlay
+{
+    margin-top: 25%;
+    max-height: fit-content;
+}
+
+.card-img-top img
+{
+    width: 15rem;
+    height: 180px;
+    object-fit:cover;
+    transition: 0.2s;
+}
+
+.card:hover img
+{
+    height: 240px;
+}
+
+h1
+{
+    font-size: 35px;
+}
